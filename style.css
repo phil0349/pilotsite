@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: rgb(0, 0, 0);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.h1 {
+  display: grid;
+  place-items: center;
+}
+img,
+h1 {
+  grid-area: 1/1;
+}
+
+.splash {
+  padding: 35px;
+  background: #e0bb88;
+  background-position: 43% 20%;
+}
+
+/* ========== section ========== */
+section {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
+  gap: 1rem;
+
+  padding-block: 4rem;
+  background: #e0bb88;
+}
+
+/* ========== article ========== */
+article {
+  grid-column: 2;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.content > p {
+  /* Kun direkte børn */
+  color: #72f1b8;
+}
+
+p + figure {
+  /* Ved siden af */
+  margin-top: 1rem;
+}
+
+/* ========== gallery ========== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  height: 100%;
+  object-fit: cover;
+}

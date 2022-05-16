@@ -1,0 +1,16 @@
+/* FONTS */
+@font-face {
+  font-family: "rye";
+  src: url(fonts/Rye/Rye-Regular.ttf) format("woff2");
+} /* font-family: 'rye', cursive */
+
+/* STORSKÆRM FORMAT */
+@media (min-width: 600px) {
+  .h1 {
+    font-family: "monoton", cursive;
+    font-size: 5.5rem;
+    color: #772a2a;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
