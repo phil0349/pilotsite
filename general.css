@@ -5,12 +5,12 @@
 } /* font-family: 'koulen', cursive */
 
 .header {
-  background: #e0bb88;
+  background: #8d6e4e;
   padding: 1rem;
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  color: #000000;
+  display: flex;
+  justify-content: space-evenly;
+  color: #e0bb88;
   position: sticky;
  
 }
