@@ -57,8 +57,12 @@ img {
 .video1 {
   display: grid;
   justify-content: center;
-  width: 100%;
-  padding-inline: 2rem;
+  width: auto;
+  margin-inline: 50px;
+}
+#video1 {
+  aspect-ratio: 16/9;
+  margin-inline: 100px;
 }
 
 /* ========== section ========== */
