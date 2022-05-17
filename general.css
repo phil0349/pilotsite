@@ -8,11 +8,11 @@
   background: #e0bb88;
   padding: 1rem;
   text-align: center;
-  display: flex;
-  justify-content: space-evenly;
-  color: #e0bb88;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #000000;
   position: sticky;
-  top: 830px;
+ 
 }
 
 .footer {

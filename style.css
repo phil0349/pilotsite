@@ -54,20 +54,18 @@ img {
   place-self: end center;
 }
 
-.video1 {
-  display: grid;
+.video {
+  display: flex;
   justify-content: center;
-  width: auto;
-  margin-inline: 50px;
+  aspect-ratio: 16/9;
 }
 #video1 {
-  aspect-ratio: 16/9;
   margin-inline: 100px;
 }
 
 .iframe {
-  display: grid;
-  grid-template-columns: 1fr;
+  width: 100%;
+  display: flex;
   justify-content: center;
 }
 
