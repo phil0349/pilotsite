@@ -1,16 +1,54 @@
 /* FONTS */
 @font-face {
-  font-family: "rye";
-  src: url(fonts/Rye/Rye-Regular.ttf) format("woff2");
-} /* font-family: 'rye', cursive */
+  font-family: "koulen";
+  src: url(Koulen/Koulen-Regular.ttf) format("woff2");
+} /* font-family: 'koulen', cursive */
 
-/* STORSKÆRM FORMAT */
-@media (min-width: 600px) {
+.header {
+  background: #e0bb88;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  color: #e0bb88;
+  position: sticky;
+  top: 830px;
+}
+
+.footer {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  background: #8d6e4e;
+  color: #e0bb88;
+  position: sticky;
+  top: 830px;
+}
+
+/*@media (min-width: 1600px) {
   .h1 {
-    font-family: "monoton", cursive;
-    font-size: 5.5rem;
-    color: #772a2a;
-    line-height: 1.1;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 295px;
+    left: 37px;
+    font-size: 5rem;
+    color: #e0bb88;
+    line-height: 0.8;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: -5px;
   }
+}
+@media (max-width: 800px) {
+  .h1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 295px;
+    left: 37px;
+    font-size: 3rem;
+    color: #e0bb88;
+    line-height: 0.8;
+    text-transform: uppercase;
+    letter-spacing: -5px;
+  }
+}

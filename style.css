@@ -2,31 +2,63 @@
   box-sizing: border-box;
   margin: 0;
 }
+main {
+  max-width: 1000px;
+  margin: 0, auto;
+}
 
 body {
-  font-family: sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
   color: rgb(0, 0, 0);
+  max-width: 1600px;
 }
 
 img {
   width: 100%;
   height: auto;
-  display: block;
 }
 .h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: grid;
-  place-items: center;
+  align-items: center;
+  font-size: 13vw;
+  color: #e0bb88;
+  line-height: 0.8;
+  text-transform: uppercase;
+  letter-spacing: -5px;
 }
-img,
-h1 {
-  grid-area: 1/1;
+
+.text {
+  color: #8d6e4e;
+}
+.box1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  place-items: center;
 }
 
 .splash {
+  display: grid;
+
+  align-items: center;
   padding: 35px;
   background: #e0bb88;
-  background-position: 43% 20%;
+  padding-block: 11px;
+}
+.splash > * {
+  grid-area: 1/1;
+}
+.splash .h1 {
+  place-self: end center;
+}
+
+.video1 {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  padding-inline: 2rem;
 }
 
 /* ========== section ========== */
@@ -35,27 +67,23 @@ section {
   grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
   gap: 1rem;
 
-  padding-block: 4rem;
+  padding-block: 1rem;
   background: #e0bb88;
 }
 
 /* ========== article ========== */
 article {
   grid-column: 2;
-
+  padding-inline: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
 
-.content > p {
-  /* Kun direkte børn */
-  color: #72f1b8;
-}
-
 p + figure {
   /* Ved siden af */
   margin-top: 1rem;
+  text-align: left;
 }
 
 /* ========== gallery ========== */
