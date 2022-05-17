@@ -10,8 +10,23 @@ main {
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
+  background-color: #e0bb88;
   color: rgb(0, 0, 0);
   max-width: 1600px;
+  transition: 1.5s;
+}
+/* KNAP FUNKTION */
+body.mode {
+  background: orange;
+  color: brown;
+}
+header.mode {
+  background: olive;
+  color: orange;
+}
+footer.mode {
+  background: olive;
+  color: orange;
 }
 
 img {
@@ -28,6 +43,35 @@ img {
   text-transform: uppercase;
   letter-spacing: -5px;
 }
+.mode {
+  background: hsl(34.8, 58.7%, 70.6%);
+  transition: 1s;
+}
+
+.mode:hover {
+  background: #8d6e4e;
+}
+
+/*
+  1. Ændr evt. baggrundsfarve, når body har klassen .dark
+  -> .dark .banner { ... }
+  2. Tilføj evt. en hover-effekt
+  -> .dark .mode:hover { ... }
+*/
+.dark .mode:hover {
+  background: hsl(255, 75%, 65%);
+}
+.dark .mode {
+  background: hsl(255, 75%, 60%);
+}
+.dark .banner {
+  background: rgb(255, 255, 255);
+}
+.dark.mode:hover {
+  background: rgb(0, 0, 0);
+}
+
+/* SPLASH, CONTAINERE */
 
 .text {
   color: #8d6e4e;
@@ -61,10 +105,11 @@ img {
 .video {
   display: flex;
   justify-content: center;
-  aspect-ratio: 16/9;
+  padding-block: 30px;
 }
 #video1 {
   margin-inline: 100px;
+  max-width: 560px;
 }
 
 .iframe {

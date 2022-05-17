@@ -4,7 +4,7 @@ const body = document.querySelector("body");
 
 // Lav en variabel, der refererer til ".mode"
 
-const mode = document.querySelector(".mode");
+const mode = document.querySelector(".color");
 
 // Lav funktionen "darkMode", som
 
