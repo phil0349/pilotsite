@@ -65,12 +65,18 @@ img {
   margin-inline: 100px;
 }
 
+.iframe {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
 /* ========== section ========== */
 section {
   display: grid;
   grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
   gap: 1rem;
-
+  padding-inline: 2rem;
   padding-block: 1rem;
   background: #e0bb88;
 }
