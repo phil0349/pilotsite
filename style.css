@@ -13,22 +13,66 @@ body {
   background-color: #e0bb88;
   color: rgb(0, 0, 0);
   max-width: 1600px;
-  transition: 1.5s;
+  transition: 1s;
+}
+.header {
+  background: #8d6e4e;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  color: #e0bb88;
+  position: sticky;
+}
+.footer {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  background: #8d6e4e;
+  color: #e0bb88;
+  position: sticky;
+  top: 830px;
 }
 /* KNAP FUNKTION */
-body.mode {
+body.dark {
   background: orange;
   color: brown;
 }
-header.mode {
-  background: olive;
+.header.dark {
+  background: brown;
   color: orange;
 }
-footer.mode {
-  background: olive;
-  color: orange;
+/* KNAP */
+.mode {
+  background: #8d6e4e;
+  border-color: #e0bb88;
+  border-style: inset;
+  color: #e0bb88;
+  transition: 1s;
+}
+.mode:hover {
+  background: #8d6e4e;
 }
 
+/*
+  1. Ændr evt. baggrundsfarve, når body har klassen .dark
+  -> .dark .banner { ... }
+  2. Tilføj evt. en hover-effekt
+  -> .dark .mode:hover { ... }
+*/
+.dark .mode:hover {
+  background: hsl(0, 75%, 65%);
+}
+.dark .mode {
+  background: hsl(255, 75%, 60%);
+}
+.dark .header {
+  background: orange;
+}
+.dark.mode:hover {
+  background: brown;
+}
 img {
   width: 100%;
   height: auto;
@@ -43,38 +87,12 @@ img {
   text-transform: uppercase;
   letter-spacing: -5px;
 }
-.mode {
-  background: hsl(34.8, 58.7%, 70.6%);
-  transition: 1s;
-}
-
-.mode:hover {
-  background: #8d6e4e;
-}
-
-/*
-  1. Ændr evt. baggrundsfarve, når body har klassen .dark
-  -> .dark .banner { ... }
-  2. Tilføj evt. en hover-effekt
-  -> .dark .mode:hover { ... }
-*/
-.dark .mode:hover {
-  background: hsl(255, 75%, 65%);
-}
-.dark .mode {
-  background: hsl(255, 75%, 60%);
-}
-.dark .banner {
-  background: rgb(255, 255, 255);
-}
-.dark.mode:hover {
-  background: rgb(0, 0, 0);
-}
 
 /* SPLASH, CONTAINERE */
 
 .text {
   color: #8d6e4e;
+  padding-block: 20px;
 }
 .box1 {
   display: grid;
@@ -89,11 +107,11 @@ img {
 
 .splash {
   display: grid;
-
   align-items: center;
   padding: 35px;
   background: #e0bb88;
   padding-block: 11px;
+  transition: 1s;
 }
 .splash > * {
   grid-area: 1/1;
@@ -126,6 +144,7 @@ section {
   padding-inline: 2rem;
   padding-block: 1rem;
   background: #e0bb88;
+  transition: 1s;
 }
 
 /* ========== article ========== */
