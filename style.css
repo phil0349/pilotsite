@@ -38,6 +38,10 @@ img {
   width: 100%;
   place-items: center;
 }
+.favicon {
+  height: 50px;
+  width: 50px;
+}
 
 .splash {
   display: grid;
