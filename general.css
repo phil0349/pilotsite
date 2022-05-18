@@ -4,7 +4,27 @@
   src: url(Koulen/Koulen-Regular.ttf) format("woff2");
 } /* font-family: 'koulen', cursive */
 
-
+/* Display: Mobil */
+@media (max-width: 600px) {
+  .body,
+  section,
+  article,
+  header,
+  footer,
+  video,
+  iframe,
+  .text {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 500px;
+    max-height: auto;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-align: justify;
+  }
+  }
 
 /*@media (min-width: 1600px) {
   .h1 {
