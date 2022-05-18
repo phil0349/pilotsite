@@ -4,16 +4,16 @@ const body = document.querySelector("body");
 
 // Lav en variabel, der refererer til ".mode"
 
-const mode = document.querySelector(".color");
+const mode = document.querySelector(".mode");
 
 // Lav funktionen "darkMode", som
 
 function darkMode() {
   body.classList.toggle("dark");
-  if (mode.innerHTML == "Dark mode") {
-    mode.innerHTML = "Light mode";
+  if (mode.innerHTML == "Original") {
+    mode.innerHTML = "Farver";
   } else {
-    mode.innerHTML = "Dark mode";
+    mode.innerHTML = "Original";
   }
 }
 
